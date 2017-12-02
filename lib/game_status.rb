@@ -40,7 +40,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board)
+  if full?(board) || draw?(board)
     return true
   else return false
   end
