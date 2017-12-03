@@ -21,10 +21,10 @@ def won?(board)
 end
 
 def full?(board)
-  count = 0
+  count = -1
   check = board.all? do |i|
-    position_taken?(board, count)
     count += 1
+    position_taken?(board, count)
   end
   check
 end
